@@ -1,0 +1,19 @@
+$('.main').owlCarousel({
+    margin:10,
+    dots:true,
+    nav:true,
+    autoplay:true,
+    loop:true,
+    autoplayHoverPause:true,
+    responsive:{
+        320:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        992:{
+            items:4
+        }
+    }
+});

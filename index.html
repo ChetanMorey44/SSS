@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Task</title>
+   <link rel="stylesheet" href="Css/Style.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Racing+Sans+One&family=Roboto+Slab:wght@100..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="navv">
+        <nav class="navbar navbar-expand-lg container " >
+            <div class="container-fluid ">
+              <a class="navbar-brand col-lg-4" href="#"><img src="./Images/logo-kindergarten.svg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav justify-content-evenly col-lg-11 ">
+                  <li class="nav-item">
+                    <a class=" fw-bold   aa" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="  fw-bold aa" href="#">Abouts Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="  fw-bold aa" href="#">Teachers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="  fw-bold aa" href="" aria-disabled="true">Departmnets</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="  fw-bold aa" href="#">Contacts</a>
+                  </li>
+                 
+                </ul>
+                <div class=" d-lg-flex col-lg-1 justify-content-between ">
+                    <li class="nav-item list-unstyled">
+                        <a href="" class="aa"><i class="bi bi-search fs-4 mx-2"></i></a>
+                     </li>
+                     <li class="nav-item list-unstyled">
+                        <a href="" class="aa"><i class="bi bi-cart-check fs-4 mx-2"></i></i></a>
+                     </li>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </div> 
+    <div class="bg">
+
+    </div>
+
+    <div class="mt-lg-5 pt-lg-5 mt-3 d-none d-lg-block">
+         <div class="container">
+           <center>
+            <ul class="bg-warning list-unstyled d-lg-flex justify-content-evenly p-lg-4 p-2 rounded-pill">
+                <li><a class="a aaa  fw-bold" href="">All</a></li>
+                <li><a class="a aaa  fw-bold" href="">Tolder</a></li>
+                <li><a class="a aaa  fw-bold" href="">PreSchool</a></li>
+                <li><a class="a aaa  fw-bold" href="">Kindergarten</a></li>
+                <li><a class="a aaa  fw-bold" href="">Pre-K-program</a></li>
+                <li><a class="a aaa  fw-bold" href="">Before/After School</a></li>
+            </ul>
+           </center>
+         </div>
+    </div>
+
+    <div class="mt-lg-5 pt-lg-4 mt-5 d-block d-lg-none" style="position: relative; top: 60px;">
+        <div class="container">
+          <center>
+           <ul class="bg-warning row list-unstyled  justify-content-evenly p-lg-4 p-2 rounded-pill">
+               <li class="col-6"><a class="a text-white fw-bold" href="">All</a></li>
+               <li class="col-6"><a class="a text-white fw-bold" onclick="one()" href="">Tolder</a></li>
+               <li class="col-6"><a class="a text-white fw-bold" onclick="two()" href="">PreSchool</a></li>
+               <li class="col-6"><a class="a text-white fw-bold" onclick="three()" href="">Kindergarten</a></li>
+               <li class="col-6"><a class="a text-white fw-bold" onclick="four()" href="">Pre-K-program</a></li>
+               <li class="col-6"><a class="a text-white fw-bold" onclick="five()" href="">Before School</a></li>
+           </ul>
+          </center>
+        </div>
+   </div>
+
+   
+   <div class="container mt-5 p-4 p-lg-0 p-md-0">
+    <div class="mt-3 p-lg-3 p-1">
+          <h2 >About Us</h2>
+          <div style="border-bottom: 5px solid  rgb(248, 10, 90); width: 60px;"></div>
+    </div>
+        <div class="mt-lg-5">
+            <div class="owl-carousel owl-theme main">
+                <div class="item one shadow sh rounded-4"  data-aos="fade-right"  data-aos-duration="1000">
+                     <img  src="./Images/one.jpeg" class="img-fluid rounded-4" alt="">
+                      <h5 class="mt- p-2">Abouts Us</h6>
+                      <p style="font-size: 13px; padding: 5px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, id voluptatum.</p>
+                </div>
+                <div class="item one shadow sh rounded-4"  data-aos="fade-right"  data-aos-duration="1000">
+                     <img  src="./Images/two.jpeg" class="img-fluid rounded-4" alt="">
+                      <h5 class="mt- p-2">Abouts Us</h6>
+                      <p style="font-size: 13px; padding: 5px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, id voluptatum.</p>
+                </div>
+                <div class="item one shadow sh rounded-4"  data-aos="fade-left"  data-aos-duration="1000">
+                     <img  src="./Images/three.jpeg" class="img-fluid rounded-4" alt="">
+                      <h5 class="mt- p-2">Abouts Us</h6>
+                      <p style="font-size: 13px; padding: 5px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, id voluptatum.</p>
+                </div>
+                <div class="item one shadow sh rounded-4"  data-aos="fade-left"  data-aos-duration="1000">
+                     <img  src="./Images/four.jpeg" class="img-fluid rounded-4" alt="">
+                      <h5 class="mt- p-2">Abouts Us</h6>
+                      <p style="font-size: 13px; padding: 5px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, id voluptatum.</p>
+                </div>
+                <div class="item one shadow sh rounded-4"  data-aos="fade-right"  data-aos-duration="1000">
+                     <img  src="./Images/five.jpeg" class="img-fluid rounded-4" alt="">
+                      <h5 class="mt- p-2">Abouts Us</h6>
+                      <p style="font-size: 13px; padding: 5px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, id voluptatum.</p>
+                </div>
+                <div class="item one shadow sh rounded-4"  data-aos="fade-right"  data-aos-duration="1000">
+                     <img  src="./Images/one.jpeg" class="img-fluid rounded-4" alt="">
+                      <h5 class="mt- p-2">Abouts Us</h6>
+                      <p style="font-size: 13px; padding: 5px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, id voluptatum.</p>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <div>
+        <div class="container"> 
+              <div class="p-3">
+                 <h1>Mentors</h1>
+                 <div style="border-bottom: 5px solid rgb(253, 12, 53); width: 60px;"></div>
+              </div>
+            <div>
+             
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 p-2" data-aos="flip-left"  data-aos-duration="2000">
+                        <div class="">
+                             <img class="img-fluid" src="./Images/m1.jpg" alt="">
+                             <h4 class="mt-3" style="color: rgb(250, 26, 64)">Undergraduate Admissions</h4>
+                             <p style="font-size: 14px;">Christopher Kane is the 23rd president of Smart University, and the Chris Argyris</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 p-2 "  data-aos="flip-left"  data-aos-duration="2000">
+                        <div>
+                             <img class="img-fluid" src="./Images/h2.jpg" alt="">
+                             <h4 class="mt-3" style="color: rgb(250, 26, 64);">Graduate Admissions</h4>
+                             <p style="font-size: 14px;">Christopher Kane is the 23rd president of Smart University, and the Chris Argyris</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 p-2"  data-aos="flip-left"  data-aos-duration="2000">
+                        <div>
+                             <img class="img-fluid" src="./Images/h3.jpg" alt="">
+                             <h4 class="mt-3" style="color: rgb(250, 26, 64);">Continuing Education</h4>
+                             <p style="font-size: 14px;">Christopher Kane is the 23rd president of Smart University, and the Chris Argyris</p>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+   </div>
+   
+   <div class="container p-4 mt-lg-5 mt-5">
+    <h1>Class's</h1>
+    <div style="border-bottom: 5px solid rgb(253, 12, 53); width: 60px;"></div>
+       <div class="row mt-2">
+            <div class="col-lg-4 col-md-6 p-2" data-aos="flip-down"  data-aos-duration="2000">
+                <div class="shadow text-center p-2">
+                    <img class="img-fluid" src="./Images/classes1-350x190.jpg" alt="">
+                   <a href="" class="aaa">  <h3 class="text-primary mt-3 " style="font-size: 20px;" >Color Matching Class</h3></a>
+                     <p class="mt-4" style="font-size: 13px; color: rgb(72, 71, 71);">The perfect class for your child with the best  staff and best teachers.</p>
+<center style="position: relative; right: 20px;">
+   <center>
+     <div style="border-bottom: 2px solid rgb(99, 96, 96); position: relative; left: 20px; opacity: 0.2; " class="p-2"></div>
+   </center>
+      
+    <ul class="d-flex justify-content-evenly col-lg-12 mt-3">
+        <li>
+           <div class="text-center">
+               <a href="" style="color: blue;">Age</a> <br>
+               <span class="text-danger" >1-2years</span>
+           </div>
+        </li>
+        <li>
+            <div class="text-center">
+                <a href="" style="color: blue;">Age</a> <br>
+                <span class="text-danger" >1-2years</span>
+            </div>
+        </li>
+        <li>
+            <div class="text-center">
+                <a href="" style="color: blue;">Age</a> <br>
+                <span class="text-danger" >1-2years</span>
+            </div>
+        </li>
+     </ul>
+</center>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2"  data-aos="flip-down"  data-aos-duration="2000">
+                <div class="shadow text-center p-2">
+                    <img class="img-fluid" src="./Images/classes2-350x190.jpg" alt="">
+                    <a href="" class="aaa">  <h3 class="text-primary mt-3 " style="font-size: 20px;" >Color Matching Class</h3></a>
+                    <p class="mt-4" style="font-size: 13px; color: rgb(72, 71, 71);">The perfect class for your child with the best  staff and best teachers.</p>
+<center style="position: relative; right: 20px;">
+   <center>
+     <div style="border-bottom: 2px solid rgb(99, 96, 96); position: relative; left: 20px; opacity: 0.2; " class="p-2"></div>
+   </center>
+      
+    <ul class="d-flex justify-content-evenly col-lg-12 mt-3">
+        <li>
+           <div class="text-center">
+               <a href="" style="color: blue;">Age</a> <br>
+               <span class="text-danger" >1-2years</span>
+           </div>
+        </li>
+        <li>
+            <div class="text-center">
+                <a href="" style="color: blue;">Age</a> <br>
+                <span class="text-danger" >1-2years</span>
+            </div>
+        </li>
+        <li>
+            <div class="text-center">
+                <a href="" style="color: blue;">Age</a> <br>
+                <span class="text-danger" >1-2years</span>
+            </div>
+        </li>
+     </ul>
+</center>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2"  data-aos="flip-down"  data-aos-duration="2000">
+                <div class="shadow text-center p-2">
+                    <img class="img-fluid" src="./Images/classes3-350x190.jpg" alt="">
+                    <a href="" class="aaa">  <h3 class="text-primary mt-3 " style="font-size: 20px;" >Color Matching Class</h3></a>
+                    <p class="mt-4" style="font-size: 13px; color: rgb(72, 71, 71);">The perfect class for your child with the best  staff and best teachers.</p>
+<center style="position: relative; right: 20px;">
+   <center>
+     <div style="border-bottom: 2px solid rgb(99, 96, 96); position: relative; left: 20px; opacity: 0.2; " class="p-2"></div>
+   </center>
+      
+    <ul class="d-flex justify-content-evenly col-lg-12 mt-3">
+        <li>
+           <div class="text-center">
+               <a href="" style="color: blue;">Age</a> <br>
+               <span class="text-danger" >1-2years</span>
+           </div>
+        </li>
+        <li>
+            <div class="text-center">
+                <a href="" style="color: blue;">Age</a> <br>
+                <span class="text-danger" >1-2years</span>
+            </div>
+        </li>
+        <li>
+            <div class="text-center">
+                <a href="" style="color: blue;">Age</a> <br>
+                <span class="text-danger" >1-2years</span>
+            </div>
+        </li>
+     </ul>
+</center>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2"  data-aos="flip-down"  data-aos-duration="2000">
+                <div class="shadow text-center  p-2">
+                    <img class="img-fluid" src="./Images/classes4-350x190.jpg" alt="">
+                    <a href="" class="aaa">  <h3 class="text-primary mt-3 " style="font-size: 20px;" >Color Matching Class</h3></a>
+                    <p class="mt-4" style="font-size: 13px; color: rgb(72, 71, 71);">The perfect class for your child with the best  staff and best teachers.</p>
+<center style="position: relative; right: 20px;">
+   <center>
+     <div style="border-bottom: 2px solid rgb(99, 96, 96); position: relative; left: 20px; opacity: 0.2; " class="p-2"></div>
+   </center>
+      
+    <ul class="d-flex justify-content-evenly col-lg-12 mt-3">
+        <li>
+           <div class="text-center">
+               <a href="" style="color: blue;">Age</a> <br>
+               <span class="text-danger" >1-2years</span>
+           </div>
+        </li>
+        <li>
+            <div class="text-center">
+                <a href="" style="color: blue;">Age</a> <br>
+                <span class="text-danger" >1-2years</span>
+            </div>
+        </li>
+        <li>
+            <div class="text-center">
+                <a href="" style="color: blue;">Age</a> <br>
+                <span class="text-danger" >1-2years</span>
+            </div>
+        </li>
+     </ul>
+</center>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2"  data-aos="flip-down"  data-aos-duration="2000">
+                <div class="shadow text-center p-2">
+                    <img class="img-fluid" src="./Images/classes5-350x190.jpg" alt="">
+                    <a href="" class="aaa">  <h3 class="text-primary mt-3 " style="font-size: 20px;" >Color Matching Class</h3></a>
+                    <p class="mt-4" style="font-size: 13px; color: rgb(72, 71, 71);">The perfect class for your child with the best  staff and best teachers.</p>
+<center style="position: relative; right: 20px;">
+   <center>
+     <div style="border-bottom: 2px solid rgb(99, 96, 96); position: relative; left: 20px; opacity: 0.2; " class="p-2"></div>
+   </center>
+      
+    <ul class="d-flex justify-content-evenly col-lg-12 mt-3">
+        <li>
+           <div class="text-center">
+               <a href="" style="color: blue;">Age</a> <br>
+               <span class="text-danger" >1-2years</span>
+           </div>
+        </li>
+        <li>
+            <div class="text-center">
+                <a href="" style="color: blue;">Age</a> <br>
+                <span class="text-danger" >1-2years</span>
+            </div>
+        </li>
+        <li>
+            <div class="text-center">
+                <a href="" style="color: blue;">Age</a> <br>
+                <span class="text-danger" >1-2years</span>
+            </div>
+        </li>
+     </ul>
+</center>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-2"  data-aos="flip-down"  data-aos-duration="2000">
+                <div class="shadow text-center p-2">
+                    <img class="img-fluid" src="./Images/classes6-350x190.jpg" alt="">
+                    <a href="" class="aaa">  <h3 class="text-primary mt-3 " style="font-size: 20px;" >Color Matching Class</h3></a>
+                    <p class="mt-4" style="font-size: 13px; color: rgb(72, 71, 71);">The perfect class for your child with the best  staff and best teachers.</p>
+<center style="position: relative; right: 20px;">
+   <center>
+     <div style="border-bottom: 2px solid rgb(99, 96, 96); position: relative; left: 20px; opacity: 0.2; " class="p-2"></div>
+   </center>
+      
+    <ul class="d-flex justify-content-evenly col-lg-12 mt-3">
+        <li>
+           <div class="text-center">
+               <a href="" style="color: blue;">Age</a> <br>
+               <span class="text-danger" >1-2years</span>
+           </div>
+        </li>
+        <li>
+            <div class="text-center">
+                <a href="" style="color: blue;">Age</a> <br>
+                <span class="text-danger" >1-2years</span>
+            </div>
+        </li>
+        <li>
+            <div class="text-center">
+                <a href="" style="color: blue;">Age</a> <br>
+                <span class="text-danger" >1-2years</span>
+            </div>
+        </li>
+     </ul>
+</center>
+                </div>
+            </div>
+       </div>
+   </div>
+
+   <div class="d-lg-block d-md-block d-none">
+      <div class="container">
+           <h1>Our Memory</h1>
+           <div style="border-bottom: 5px solid rgb(253, 12, 53); width: 60px;"></div>
+           <div class="row mt-3">
+             <div class="col-lg-4 col-md-4">
+                  <video  style="width: 350px ;" autoplay muted>
+                    <source src="./v1.mp4" type="video/mp4">
+                  </video>
+             </div>
+             <div class="col-lg-4 col-md-4">
+                  <video style="width: 350px; " autoplay muted>
+                    <source src="./v2.mp4" type="video/mp4">
+                  </video>
+             </div>
+             <div class="col-lg-4 col-md-4">
+                  <video style="width: 350px; " autoplay muted>
+                    <source src="./v3.mp4" type="video/mp4">
+                  </video>
+             </div>
+           </div> 
+      </div>
+   </div>
+
+   <div class="d-lg-none d-md-none d-block">
+    <div class="container">
+         <h1>Our Memory</h1>
+         <div style="border-bottom: 5px solid rgb(253, 12, 53); width: 60px;"></div>
+         <div class="row mt-3">
+           <div class="col-lg-4 col-md-4">
+                <video  style="width: 300px ;" autoplay muted>
+                  <source src="./v1.mp4" type="video/mp4">
+                </video>
+           </div>
+           <div class="col-lg-4 col-md-4">
+                <video style="width: 300px; " autoplay muted>
+                  <source src="./v2.mp4" type="video/mp4">
+                </video>
+           </div>
+           <div class="col-lg-4 col-md-4">
+                <video style="width: 300px; " autoplay muted>
+                  <source src="./v3.mp4" type="video/mp4">
+                </video>
+           </div>
+         </div> 
+    </div>
+ </div>
+
+   <div class="bg1 mt-3 mt-lg-5">
+        <div class="center p-3">
+           
+                <h1 class="text-white">Interested in learning more about us?</h1>
+                <button class="btn btn-outline-warning p-lg-3 p-1 col-7 col-lg-2 border-4 rounded-pill  text-white fw-bold mt-3 ">Inquire Taday</button>
+            
+        </div>
+   </div>
+
+
+   <div class="container class mt-lg-5 mt-3">
+        <div class="row">
+               <div class="col-lg-6 col-md-6">
+                 <h1 style="border-bottom: 5px solid  rgb(248, 10, 90); width: 130px;">Smarty Kindergarden</h1>
+                 <div class=""></div>
+                 <p  style="font-size: 14px;color: gray;" class="mt-lg-2 mt-3 p-2">Our philosophy is learning through play as we offer a stimulating environment for children. Our philosophy is learning through play as we offer a stimulating environment for children.</p>
+                 <p style="font-size: 13px; color: gray;" class="p-1">Slow-carb meh whatever, succulents dreamcatcher health goth bushwick schlitz woke. Cred 3 wolf moon tattooed four loko, hashtag tote bag pabst messenger bag single-origin coffee activated charcoal kale chips vape tousled crucifix kitsch. Stumptown jianbing shoreditch hexagon selvage etsy celiac poke everyday carry cold-pressed single-origin coffee mixtape mustache.</p>
+                 <button class="btn btn-outline-warning border-4 border-warning rounded-pill col-7 col-lg-3  p-lg-2 p-1 mt-lg-2">Learn More..</button>
+               </div>
+               <div class="col-lg-6 col-md-6">
+                <div class="row">
+                       <div class=" p-3 text-center col-lg-6 col-md-6">
+                          <div class="shadow p-3"  data-aos="flip-down"  data-aos-duration="2000">
+                            <img src="./Images/gra.png" class="" width="130" alt="">
+                            <h5>Full Day Sessions</h2>
+                          </div>
+                       </div>
+                       <div class=" p-3 text-center col-lg-6 col-md-6">
+                        <div class="shadow p-3"  data-aos="flip-down"  data-aos-duration="2000">
+                            <img src="./Images/gr1.png" class="" width="130" alt="">
+                          <h5 class="mt-3">Online  Access</h2>
+                        </div>
+                     </div>
+                </div>
+                <div class="row">
+                    <div class=" p-3 text-center col-lg-6 col-md-6">
+                       <div class="shadow p-3"  data-aos="flip-down"  data-aos-duration="2000">
+                        <img src="./Images/gr3.png" class="" width="130" alt="">
+                         <h5 class="mt-4">Varied Classes</h2>
+                       </div>
+                    </div>
+                    <div class=" p-3 text-center col-lg-6 col-md-6">
+                     <div class="shadow p-3"  data-aos="flip-down"  data-aos-duration="2000">
+                        <img src="./Images/gr4.png" class="" width="130" alt="">
+                       <h5>Friendly  Place</h2>
+                     </div>
+                  </div>
+             </div>
+               </div>
+        </div>
+   </div>
+
+   <footer class="  p-3 p-lg-5 text-white  " style="background-color: #032435;">
+         <div class="row">
+               <div class="col-lg-3 col-md-2 mt-5 mt-lg-0 mt-md-3 ">
+                
+                    <div>
+                      <div class="text-start">
+                        <img src="./Images/logo-kindergarten.svg" class="img-fluid" alt="">
+                      </div>
+                        <p style="font-size: 13px;" class="text-start mt-4 p-2">In fact, we reckon you’ll love Picksum Ipsum so much, you might never want to replace it with real text.</p>
+                        <ul class="d-flex justify-content-evenly col-10 mt-2 ">
+                             <li>
+                                <a href=""><i class="bi bi-facebook fs-5 aaa"></i></a>
+                            </li>
+                             <li>
+                                <a href=""><i class="bi bi-instagram fs-5 aaa"></i></a>
+                            </li>
+                             <li>
+                                <a href=""><i class="bi bi-whatsapp fs-5 aaa"></i></a>
+                            </li>
+                             <li>
+                                <a href=""><i class="bi bi-twitter fs-5 aaa"></i></a>
+                            </li>
+                             <li>
+                                <a href=""><i class="bi bi-google fs-5 aaa"></i></a>
+                            </li>
+                             <li>
+                                <a href=""><i class="bi bi-youtube fs-5 aaa"></i></a>
+                            </li>
+                        </ul>
+                  </div>
+               
+               </div>
+               <div class="col-lg-3 col-md-2 mt-5 mt-lg-0 mt-md-3 ">
+                  <div class=" container">
+                       <h4 class="text-warning fw-bold">Quick Links</h4>
+                       <div class="row">
+                        <ul class="col-6 mt-3">
+                            <li class="mt-1"><a style="font-size: 14px;" class=" aaa" href=""><span class="text-warning fs-5">></span> Events</a></li>
+                            <li class="mt-1"><a style="font-size: 14px;" class=" aaa" href=""><span class="text-warning fs-5">></span> Events</a></li>
+                            <li class="mt-1"><a style="font-size: 14px;" class=" aaa" href=""><span class="text-warning fs-5">></span> Events</a></li>
+                            <li class="mt-1"><a style="font-size: 14px;" class=" aaa" href=""><span class="text-warning fs-5">></span> Events</a></li>
+                            <li class="mt-1"><a style="font-size: 14px;" class=" aaa" href=""><span class="text-warning fs-5">></span> Events</a></li>
+                          </ul>
+                          <ul class="col-6 mt-3">
+                            <li class="mt-1"><a style="font-size: 14px;" class=" aaa" href=""><span class="text-warning fs-5">></span> Events</a></li>
+                            <li class="mt-1"><a style="font-size: 14px;" class=" aaa" href=""><span class="text-warning fs-5">></span> Events</a></li>
+                            <li class="mt-1"><a style="font-size: 14px;" class=" aaa" href=""><span class="text-warning fs-5">></span> Events</a></li>
+                            <li class="mt-1"><a style="font-size: 14px;" class=" aaa" href=""><span class="text-warning fs-5">></span> Events</a></li>
+                            <li class="mt-1"><a style="font-size: 14px;" class=" aaa" href=""><span class="text-warning fs-5">></span> Events</a></li>
+                          </ul>
+                       </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-2 mt-5 mt-lg-0 mt-md-3  ">
+                  <div class="d-none d-lg-block">
+                    <h4 class="text-warning">Media Gallery</h4>
+                   <div class="mt-lg-5 mt-2">
+                    <div class="row p- mt- ">
+                        <div class="col-4 "><img width="80" height="67" src="./Images/gallery3-320x320 - Copy.jpg" class=" rounded-4" alt=""></div>
+                        <div class="col-4 "><img width="80" height="67" src="./Images/gallery4-320x320 - Copy.jpg" class=" rounded-4" alt=""></div>
+                        <div class="col-4 "><img width="80" height="67"  src="./Images/classes2-350x190.jpg" class=" rounded-4" alt=""></div>
+                       </div>
+                       <div class="row mt-4">
+                        <div class="col-4"><img width="80" height="67" src="./Images/gallery1 - Copy (2).jpg" class=" rounded-4" alt=""></div>
+                        <div class="col-4"><img width="80" height="67" src="./Images/gallery5-320x320 - Copy.jpg" class=" rounded-4" alt=""></div>
+                        <div class="col-4"><img width="80" height="67"  src="./Images/gallery6-320x320 - Copy.jpg" class=" rounded-4" alt=""></div>
+                       </div>
+                   </div>
+                  </div>
+
+                <div class="d-block d-lg-none">
+                    <h4 class="text-warning">Media Gallery</h4>
+                    <div class="row p-3 mt-4 ">
+                        <div class="col-4 p-3"><img width="80" height="67" src="./Images/gallery3-320x320 - Copy.jpg" class=" rounded-4" alt=""></div>
+                        <div class="col-4 p-3"><img width="80" height="67" src="./Images/gallery4-320x320 - Copy.jpg" class=" rounded-4" alt=""></div>
+                        <div class="col-4 p-3"><img width="80" height="67"  src="./Images/classes2-350x190.jpg" class=" rounded-4" alt=""></div>
+                       </div>
+                       <div class="row p-3 mt-2 mt-lg-2">
+                        <div class="col-4"><img width="80" height="67" src="./Images/gallery1 - Copy (2).jpg" class=" rounded-4" alt=""></div>
+                        <div class="col-4"><img width="80" height="67" src="./Images/gallery5-320x320 - Copy.jpg" class=" rounded-4" alt=""></div>
+                        <div class="col-4"><img width="80" height="67"  src="./Images/gallery6-320x320 - Copy.jpg" class=" rounded-4" alt=""></div>
+                       </div>
+                </div>
+              </div>
+
+
+             
+               <div class="col-lg-3 col-md-2 mt-5 mt-lg-0 mt-md-3  ">
+                  <div>
+                       <h4 class="text-warning">Get in Touch</h4>
+                       <div class="mt-4 p-2">
+                          <div class="d-flex ">
+                            <span><i class="bi bi-geo-alt-fill text-warning fs-4"></i></span><p style="font-size: 13px;" class="mx-4">1644 Platte Street, Palo Alto, CA 90202, USA</p>
+                          </div>
+                          <div class="d-flex ">
+                              <span><i class="bi bi-phone text-warning fs-4"></i></span><p style="font-size: 13px;" class="mx-4 mt-2">Call Free: +1 376-236-2336</p>
+                          </div>
+                          <div class="d-flex ">
+                              <span><i class="bi bi-envelope-arrow-down text-warning fs-4"></i></span><p style="font-size: 13px;" class="mx-4 mt-2">info@stylemixthemes.com</p>
+                          </div>
+                          <div class="d-flex ">
+                             <span><i class="bi bi-alarm  text-warning fs-4"></i></span><p style="font-size: 13px;" class="mx-4 mt-2">Mon — Fri: 8.00 AM — 18.00</p>
+                          </div>
+                       </div>
+                  </div>
+               </div>
+         </div>
+   </footer>
+   <div class="text-center p-lg-5 p-3">
+      <p class="d-block d-md-none d-lg-none" style="font-size: 10px; color: gray;">Copyright © Kindergarten Theme byspan <span > <a href="" style="color: palevioletred;">Stylemix Themes.</a></span> All rights reserved</p>
+
+      <p class="d-none d-md-block d-lg-block" style="font-size: 15px; color: gray;">Copyright © Kindergarten Theme byspan <span > <a href="" style="color: palevioletred;">Stylemix Themes.</a></span> All rights reserved</p>
+   </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="Js/Script.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
